@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code Editor</title>
+    <link rel = "icon" href ="./images/code.png" type = "image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <div class="sub-code">
+                <label> <img src="./images/html.png" alt="html" class="code-img html-img"> HTML</label>
+                <textarea id="html-code" onkeyup="run()"></textarea>
+            </div>
+            
+            <div class="sub-code">
+                <label> <img src="./images/css.png" alt="css" class="code-img css-img"> CSS</label>
+                <textarea id="css-code" onkeyup="run()"></textarea>
+            </div>
+            
+            <div class="sub-code">
+                <label> <img src="./images/js.png" alt="js" class="code-img js-img"> JS</label>
+                <textarea id="js-code" onkeyup="run()"></textarea>
+            </div>
+        </div>
+
+        <div class="right">
+            <label> <img src="./images/play.png" alt="output" class="code-img output-img"> Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Made By Aman Singh</h3>
+        <p>© <span id="yr"></span> Copyright @Aman</p>
+    </div>
+
+<script src="script.js" ></script>
+
+</body>
+
+</html>
